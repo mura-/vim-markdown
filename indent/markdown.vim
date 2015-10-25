@@ -15,7 +15,7 @@ function! s:is_li_start(line)
 endfunction
 
 function GetMkdIndent()
-    let list_ind = 4
+    let list_ind = shiftwidth
     " Find a non-blank line above the current line.
     let lnum = prevnonblank(v:lnum - 1)
     " At the start of the file use zero indent.
